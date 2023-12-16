@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/style.css">
+    <title>BRT Price Checker</title>
+</head>
+<body>
+    <div class="title">
+        <h2>Peshawar BRT Price Checking Program</h2>
+    </div>
+
+    <div class="container">
+        <div class="input">
+            <form id="form">
+                <label for="username">Enter Name</label>
+                <input type="text" name="username" id="username">
+
+                <label for="distance">Enter Distance In KM</label>
+                <input type="text" name="distance" id="distance">
+
+                <label for="result">Price</label>
+                <input type="text" name="result" id="result" readonly="true">
+                <button type="submit">Click</button>
+            </form>
+        </div>
+        <div class="output">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Distance</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                   <!-- Rows will be added dynamically through JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

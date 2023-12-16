@@ -1,0 +1,99 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(106, 107, 108);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+.container .input, .container .output {
+    width: 40%;
+}
+.input form {
+    width: 80%;
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.input form input {
+    display: block;
+    width: 100%;
+    padding: 8px 3px;
+    border: none;
+    outline: none;
+}
+.input form label {
+    display: block;
+    padding: 10px 0 3px 0;
+}
+.input form button {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    padding: 6px 0px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.output table {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: aquamarine;
+}
+.output table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.output table th, .output table td {
+    padding: 8px 10px;
+}
+
+@media only screen and (max-width: 765px) {
+    .container {
+        width: 70%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }   
+    .container .input, .container .output {
+        width: 90%;
+    }
+    .input form {
+        width: 100%;
+    }
+    .container .output {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .container {
+        width: 80%;
+    }   
+}
+@media only screen and (max-width: 410px) {
+    .container {
+        width: 90%;
+    }   
+}
